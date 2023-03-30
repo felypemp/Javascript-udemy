@@ -2,22 +2,17 @@
     <head>
         <title>Aulas de Javascript</title>
         <script>
-             var frase = "Meu time fez um gol"
-            var primeiraLetra = frase.charAt(0);
-            console.log(primeiraLetra)
+             var nome = "Felipe Matos Pereira"
+             var i = 0;
+             var letra = "";
 
-            var letra ="";
-            var primeiraPalavra = "";
-            var i = 0;
-
-            while (letra != " ") {
-                letra = frase.charAt(i);
-                primeiraPalavra += letra;
+             while (letra != " "){
+                letra = nome.charAt(i);
+                primeira = nome.substr(0,i);
                 i++;
-            } 
+             }
 
-            console.log(primeiraPalavra)
-            
+             console.log(primeira);
         </script>
     </head>
     <body>
