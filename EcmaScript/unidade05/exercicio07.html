@@ -3,20 +3,18 @@
         <title>Curso de EcmaScript 6.0</title>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.29/browser.min.js"></script>
         <script type="text/babel">
-        
-            var jogador = {
-                nome:"Messi",
-                habilidades:["chutar","driblar","correr","fazer gols"],
-                escreverHabilidades: function() {
-                    var _this = this;
-                    this.habilidades.forEach(function(skill) {
-                        console.log(_this.nome + " é craque em " + skill);   
-                    });
-                }
-            }
-            
-            jogador.escreverHabilidades();
+        var [primeiro, segundo, ...resto] = ["Pêra", "Uva", "Maçã", "Mamão","Banana"]
+        console.log(primeiro);
+        console.log(segundo);
+        console.log(resto);
 
+        var {tipo,cor,preco,tampas} = {tipo:"caneta", preco: 1.99, cor:"Azul", tampas:["redonda", "quadrada"]}
+
+        console.log(tipo);
+        console.log(cor);
+        console.log(tampas[1]);
+        console.log(preco);
+        
         </script>
     </head>
     <body>
