@@ -4,6 +4,18 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.29/browser.min.js"></script>
         <script type="text/babel">
         
+            class produto {
+                constructor (nome, preco){
+                    this.nome = nome;
+                    this.preco = preco;
+                }
+                escreverDados(){
+                    console.log(`Minha ${this.nome} custa ${this.preco}`)
+                }
+            }
+
+            var caneta = new produto("Caneta bic", 3);
+            caneta.escreverDados();
 
         </script>
     </head>

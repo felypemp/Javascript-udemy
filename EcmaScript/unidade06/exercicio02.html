@@ -4,6 +4,30 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.29/browser.min.js"></script>
         <script type="text/babel">
         
+            class poligono {
+                constructor(lados, altura, largura, nome){
+                    this.lados =lados;
+                    this.altura =altura;
+                    this.largura =largura;
+                    this.nome = nome;
+                }
+
+                escreverCaracteristicas(){
+                    console.log(`Eus sou um ${this.nome}, tenho ${this.lados} lados e tenho largura de ${this.largura} cm e altura de ${this.altura} cm `)
+                }
+            }
+
+            class Quadrado extends poligono {
+                constructor(altura, largura){
+                    super(4, altura, largura, "quadrado")
+                }
+            }
+
+            var pentagono = new poligono(5, 5, 5, "pentagono");
+            pentagono.escreverCaracteristicas();
+
+            var quadrado = new Quadrado(10, 10);
+            quadrado.escreverCaracteristicas();
 
         </script>
     </head>
