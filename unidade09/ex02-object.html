@@ -2,6 +2,17 @@
     <head>
         <title>Aulas de Javascript</title>
         <script>
+            var produto = {nome:"Caneta", preco:1.99, cor:"Azul"}
+            console.log(produto.nome)
+            console.log(produto.preco)
+            console.log(produto.cor)
+
+            function retornarInfo(){
+                return `Meu produto ${this.nome} custa ${this.preco} e é da cor ${this.cor}`
+            }
+
+            produto.info = retornarInfo;
+            console.log(produto.info())
 
         </script>
     </head>
